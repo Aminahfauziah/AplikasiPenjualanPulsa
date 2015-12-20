@@ -32,7 +32,8 @@ DefaultTableModel datasource = new DefaultTableModel(
         saldo();
         lbl_bantuan.setText("simpan");
         lbl_bantuan.setVisible(false);
-        lbl_saldo.setVisible(false);
+        lbl_saldo.setVisible(true);
+        
     }
  public void openConnection()
     {
@@ -117,7 +118,7 @@ refresh();
       lbl_saldo.setText(hasill);
       
               
-      
+
       
         try {
             stmt = (Statement) this.con.createStatement(ResultSet.FETCH_FORWARD,
@@ -144,6 +145,7 @@ refresh();
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextField1 = new javax.swing.JTextField();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         lblnota = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -158,6 +160,8 @@ refresh();
         lbl_bantuan = new javax.swing.JLabel();
         txt_tgl = new javax.swing.JTextField();
         lbl_saldo = new javax.swing.JLabel();
+
+        jTextField1.setText("jTextField1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -236,30 +240,30 @@ refresh();
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                    .addComponent(jLabel6)
-                                    .addGap(68, 68, 68))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
-                                    .addComponent(lblnota)
-                                    .addGap(69, 69, 69)))
+                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lbl_saldo, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addGap(70, 70, 70)))
-                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                .addComponent(txt_saldo, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(63, 63, 63)
-                                .addComponent(lbl_saldo, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(txt_nota, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txt_tgl, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                .addComponent(btntambah, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnubah)
-                                .addGap(32, 32, 32)
-                                .addComponent(btnKmbl)))
+                                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                                            .addComponent(jLabel6)
+                                            .addGap(68, 68, 68))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
+                                            .addComponent(lblnota)
+                                            .addGap(69, 69, 69)))
+                                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                                        .addComponent(jLabel5)
+                                        .addGap(70, 70, 70)))
+                                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txt_saldo, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txt_nota, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txt_tgl, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                                        .addComponent(btntambah, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnubah)
+                                        .addGap(32, 32, 32)
+                                        .addComponent(btnKmbl)))))
                         .addGap(26, 26, 26)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
                 .addComponent(lbl_bantuan)
@@ -279,9 +283,10 @@ refresh();
                 .addGap(22, 22, 22)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(txt_saldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_saldo))
-                .addGap(70, 70, 70)
+                    .addComponent(txt_saldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
+                .addComponent(lbl_saldo)
+                .addGap(29, 29, 29)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btntambah)
                     .addComponent(btnubah)
@@ -417,6 +422,7 @@ refresh();
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lbl_bantuan;
     private javax.swing.JLabel lbl_saldo;
     private javax.swing.JLabel lblnota;

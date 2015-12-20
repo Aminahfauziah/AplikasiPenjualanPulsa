@@ -25,6 +25,7 @@ public class FrmMenu extends javax.swing.JFrame {
      */
     public FrmMenu() {
         initComponents();
+        
     
     }
     
@@ -271,6 +272,7 @@ public class FrmMenu extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new FrmMenu().setVisible(true);
+               
             }
         });
     }

@@ -94,17 +94,12 @@ ResultSet rs;
           System.out.println(e);
       }
   }
+
  private void simpanTransaksi() {
      
-     String beli ,saldo;
-      int hasil=0;
-      beli = lbl_harga_asli.getText();
-      saldo= lbl_saldo.getText();
-      int b = Integer.parseInt(beli);
-      int s = Integer.parseInt(saldo);
-      hasil = s-b;
-      String hasill= Integer.toString(hasil);
-      txt_sisa.setText(hasill);
+    test ts = new test();
+    String h = ts.hitung(lbl_harga_asli.getText(), lbl_saldo.getText());
+    txt_sisa.setText(h);
         try {
             stmt = (Statement) this.con.createStatement(ResultSet.FETCH_FORWARD,
                     ResultSet.TYPE_SCROLL_SENSITIVE);
@@ -228,6 +223,12 @@ ResultSet rs;
         });
 
         jLabel3.setText("Sisa Saldo");
+
+        txt_sisa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_sisaActionPerformed(evt);
+            }
+        });
 
         lbl_merk.setText("jLabel4");
 
@@ -444,6 +445,10 @@ ResultSet rs;
         // TODO add your handling code here:
         harga();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txt_sisaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_sisaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_sisaActionPerformed
 public void harga()
 {
    

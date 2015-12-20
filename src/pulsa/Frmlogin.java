@@ -133,20 +133,9 @@ public class Frmlogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_loginActionPerformed
- String value1=txt_user.getText();
-        String value2=txt_pass.getText();
-            if (value1.equals("ami") && value2.equals("aminahfauziah"))
-            {
-                FrmMenu mu = new FrmMenu();
-                mu.setVisible(true);
-                dispose();
-               
-            }
-            else{
-                System.out.println("enter the valid username and password");
-                JOptionPane.showMessageDialog(this,"Incorrect login or password",
-                "Error",JOptionPane.ERROR_MESSAGE);
-    }        // TODO add your handling code here:
+        login lg= new login();
+        lg.ceklogin(txt_user.getText(), txt_pass.getText());
+          // TODO add your handling code here:
     }//GEN-LAST:event_btn_loginActionPerformed
 
     private void txt_userActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_userActionPerformed
