@@ -21,8 +21,6 @@ public class login {
                 
                 FrmMenu mu = new FrmMenu();
                 mu.setVisible(true);
-                Frmlogin fl = new Frmlogin();
-                fl.setVisible(false);
                
             }
             else{

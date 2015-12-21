@@ -44,10 +44,10 @@ public class testTest {
     @Test
     public void testHitung() {
         System.out.println("hitung");
-        String hargaA = "10000";
-        String SaldoA = "20000";
+        String hargaA = "10500";
+        String SaldoA = "100000";
         test instance = new test();
-        String expResult = "10000";
+        String expResult = "89500";
         String result = instance.hitung(hargaA, SaldoA);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.

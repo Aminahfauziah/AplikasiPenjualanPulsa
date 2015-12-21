@@ -10,7 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
 
-public class FrmBarang extends javax.swing.JFrame {
+public class FrmBarang extends javax.swing.JFrame {          
 Connection con;
 Statement stmt;
 ResultSet rs;
